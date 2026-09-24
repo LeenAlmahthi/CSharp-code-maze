@@ -1,4 +1,5 @@
-﻿public class progarm
+﻿// See https://aka.ms/new-console-template for more information
+public class progarm
 {
     public record User(string FirstName, string LastName);
     public record struct Admin(string FirstName, string LastName, string Role);
