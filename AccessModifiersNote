@@ -1,0 +1,19 @@
+public
+→ Accessible from anywhere that can access the containing type.
+
+private
+→ Accessible only inside the containing class.
+
+protected
+→ Accessible inside the containing class and derived classes.
+→ Not directly accessible from an ordinary object in Main.
+
+internal
+→ Accessible from code in the same assembly/project.
+→ Not normally accessible from another project/assembly.
+
+Default class
+→ internal
+
+Default class member
+→ private
