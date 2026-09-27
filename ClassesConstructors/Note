@@ -1,0 +1,5 @@
+A class defines the structure and behavior. 
+	An object is an [instance] of that class, with its own instance data, and can access the class's accessible members.
+
+Partial Classes
+A class can be split into multiple files using the partial keyword.
