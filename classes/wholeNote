@@ -1,0 +1,27 @@
+﻿CLASS
+→ Reference type
+→ Assignment copies the reference
+→ Normally reference-based equality
+→ Good for complex entities/objects
+
+
+RECORD CLASS
+→ Reference type
+→ Assignment copies the reference
+→ Value-based equality
+→ Good for data-oriented objects / DTOs
+
+
+STRUCT
+→ Value type
+→ Assignment copies the value
+→ Value semantics
+→ Good for small, simple value-like data
+
+
+RECORD STRUCT
+→ Value type
+→ Assignment copies the value
+→ Value semantics
+→ + record-generated functionality
+→ Good when you want record behavior but still want a value type

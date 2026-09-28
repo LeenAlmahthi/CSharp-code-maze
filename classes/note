@@ -1,0 +1,52 @@
+﻿                    C# TYPES
+
+              ┌───────────────────┐
+              │ Reference Types   │
+              └───────────────────┘
+                    /       \
+                   /         \
+              class       record class
+                ↓               ↓
+          reference       value equality
+           equality
+
+
+              ┌───────────────────┐
+              │    Value Types    │
+              └───────────────────┘
+                    /       \
+                   /         \
+              struct      record struct
+                ↓               ↓
+          value semantics   value semantics
+                           + record features
+
+
+int number = 10;
+
+object obj = number; // boxing
+
+                            p
+                        ┌──────────────┐
+                        │ X = 10       │
+                        │ Y = 20       │
+                        └──────────────┘
+                        
+                               │
+                               │ boxing → COPY
+                               ↓
+                        
+                        obj ───────→ ┌──────────────┐
+                                     │ X = 10       │
+                                     │ Y = 20       │
+                                     └──────────────┘
+                                      object on heap
+
+object obj = 10;
+int number = (int)obj;
+
+                                          object
+                                            ↓
+                                          boxed int
+                                            ↓ cast
+                                          int
